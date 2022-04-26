@@ -17,7 +17,7 @@ function redirect() {
       .then((data) => {
         console.log(data);
         if (data.status === 'horoshiy url') {
-          window.location.replace('https://' + inputValue)
+          window.open('https://' + inputValue)
         }
         if (data.status === 'okey') {
           window.location.replace(data.link)
